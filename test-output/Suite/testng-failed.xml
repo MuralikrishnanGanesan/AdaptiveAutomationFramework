@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Suite]" parallel="classes">
+  <test name="Test1(failed)" parallel="classes">
+    <classes>
+      <class name="com.example.Parallel01IT">
+        <methods>
+          <include name="BeforeClass"/>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.example.Parallel01IT -->
+      <class name="com.example.Parallel02IT">
+        <methods>
+          <include name="BeforeClass"/>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.example.Parallel02IT -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

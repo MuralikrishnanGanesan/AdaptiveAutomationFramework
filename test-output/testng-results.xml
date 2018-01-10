@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="0" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2258" started-at="2018-01-05T10:27:43Z" finished-at="2018-01-05T10:27:45Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cukesrunner.TestRunner$ExtendReportRunner@12cdcf4]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cukesrunner.TestRunner@1e7c7811]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="2258" started-at="2018-01-05T10:27:43Z" finished-at="2018-01-05T10:27:45Z">
+      <class name="cukesrunner.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:cukesrunner.TestRunner@1e7c7811]" name="setUpClass" is-config="true" duration-ms="88" started-at="2018-01-05T15:57:44Z" finished-at="2018-01-05T15:57:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:cukesrunner.TestRunner@1e7c7811]" name="tearDownClass" is-config="true" duration-ms="804" started-at="2018-01-05T15:57:44Z" finished-at="2018-01-05T15:57:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cukesrunner.TestRunner -->
+      <class name="cukesrunner.TestRunner$ExtendReportRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:cukesrunner.TestRunner$ExtendReportRunner@12cdcf4]" name="setUpClass" is-config="true" duration-ms="978" started-at="2018-01-05T15:57:43Z" finished-at="2018-01-05T15:57:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:cukesrunner.TestRunner$ExtendReportRunner@12cdcf4]" name="setup" is-config="true" duration-ms="0" started-at="2018-01-05T15:57:44Z" finished-at="2018-01-05T15:57:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:cukesrunner.TestRunner$ExtendReportRunner@12cdcf4]" name="tearDownClass" is-config="true" duration-ms="88" started-at="2018-01-05T15:57:44Z" finished-at="2018-01-05T15:57:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cukesrunner.TestRunner$ExtendReportRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

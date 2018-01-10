@@ -1,0 +1,5 @@
+DomLoadTime (sec),PageLoadTime (sec) ,From Page,To Page,ResponseCode,ResponseMessage,ThreadName,DataType,Success,FailureMessage,Bytes,GrpThreads,AllThreads,Latency,IdleTime
+3.927,7.731,Log In — WordPress.com,Log In — WordPress.com,200,OK,Global Brands,text,true,,0,1,1,0,0
+4.749,10.116,Log In — WordPress.com,Log In — WordPress.com,200,OK,Global Brands,text,true,,0,1,1,0,0
+5.016,10.947,Log In — WordPress.com,Log In — WordPress.com,200,OK,Global Brands,text,true,,0,1,1,0,0
+5.254,11.176,Log In — WordPress.com,Log In — WordPress.com,200,OK,Global Brands,text,true,,0,1,1,0,0
