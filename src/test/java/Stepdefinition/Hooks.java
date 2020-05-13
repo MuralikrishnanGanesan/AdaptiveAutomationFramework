@@ -52,6 +52,8 @@ public class Hooks {
 			DeviceAllocationManager.allocateDevice(DeviceAllocationManager.getNextAvailableDeviceId(), "Pass IOS Device if available");
 
 			AppiumServermanager.startAppiumServer();
+			
+			
 
 		}else if (CommonLibrary.config.getString("breakPoint").equalsIgnoreCase("Desktop")){
 

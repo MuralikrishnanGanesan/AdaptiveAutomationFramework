@@ -1,9 +1,6 @@
 package Stepdefinition;
 
 import org.openqa.selenium.WebDriver;
-
-import com.cucumber.listener.Reporter;
-
 import PageObjects.HomePageConstants;
 import PageObjects.LoginPageConstants;
 import commonUtils.CommonLibrary;
@@ -38,7 +35,7 @@ public class LoginPageStepdefinition {
 			commonlibrary.clearAndEnterText(lp.Username, "muralimurali14");
 			commonlibrary.isElementPresentVerifyClick(lp.Login);
 			commonlibrary.clearAndEnterText(lp.Password,"m#rali14");
-			commonlibrary.isElementPresentVerifyClickPageLoad(lp.Login);
+			commonlibrary.isElementPresentVerifyClick(lp.Login);
 			
 		
 	}

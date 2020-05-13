@@ -12,8 +12,8 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         strict = true,
-        features = {"C:/Users/muralikrishnan_g/Parallel testing/AdaptiveAutomationFramework/src/test/resources/Features/ParallelDemoFeature/WordpressDemo.feature:47"},
-        plugin = {"com.cucumber.listener.ExtentCucumberFormatter:C:/Users/muralikrishnan_g/Parallel testing/AdaptiveAutomationFramework/Report/5.html"},
+        features = {"/Users/us-guest/Documents/AdaptiveAutomationFramework/src/test/resources/Features/ParallelDemoFeature/WordpressDemo.feature:45"},
+        plugin = {"com.cucumber.listener.ExtentCucumberFormatter:/Users/us-guest/Documents/AdaptiveAutomationFramework/Report/5.html"},
         monochrome = true,
         glue = {"Stepdefinition", "commonUtils"})
 @Test        

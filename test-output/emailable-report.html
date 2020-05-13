@@ -1,40 +1,131 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>TestNG:  Unit Test</title>
-<style type="text/css">
-table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
-table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
-border:1px solid #000099;padding:.25em .5em .25em .5em
-}
-table.result th {vertical-align:bottom}
-tr.param th {padding-left:1em;padding-right:1em}
-tr.param td {padding-left:.5em;padding-right:2em}
-td.numi,th.numi,td.numi_attn {
-text-align:right
-}
-tr.total td {font-weight:bold}
-table caption {
-text-align:center;font-weight:bold;
-}
-table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
-table.passed td,table tr.passedeven td {background-color: #33FF33;}
-table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
-table.passed td,table tr.skippedodd td {background-color: #dddddd;}
-table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
-table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
-tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
-p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
-div.shootout {padding:2em;border:3px #4854A8 solid}
-</style>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
 </head>
 <body>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">2.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Cucumber Automation</th></tr>
+<tr><td><a href="#t0">Automation</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">6</td><td class="num">279,251</td><td></td><td></td></tr>
 </table>
-<table cellspacing="0" cellpadding="0" class="passed" id="summary">
-<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Cucumber Automation</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Automation &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.example.Parallel01IT</td><td><a href="#m0">afterClass</a></td><td rowspan="1">1589383491525</td><td rowspan="1">0</td></tr><tr class="failedodd"><td rowspan="1">com.example.Parallel02IT</td><td><a href="#m1">afterClass</a></td><td rowspan="1">1589383403207</td><td rowspan="1">1</td></tr><tr class="failedeven"><td rowspan="1">com.example.Parallel03IT</td><td><a href="#m2">afterClass</a></td><td rowspan="1">1589383446718</td><td rowspan="1">0</td></tr><tr class="failedodd"><td rowspan="1">com.example.Parallel04IT</td><td><a href="#m3">afterClass</a></td><td rowspan="1">1589383575847</td><td rowspan="1">0</td></tr><tr class="failedeven"><td rowspan="1">com.example.Parallel05IT</td><td><a href="#m4">afterClass</a></td><td rowspan="1">1589383534838</td><td rowspan="1">2</td></tr><tr class="failedodd"><td rowspan="1">com.example.Parallel06IT</td><td><a href="#m5">afterClass</a></td><td rowspan="1">1589383615687</td><td rowspan="1">1</td></tr><tr><th colspan="4">Automation &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.example.Parallel01IT</td><td><a href="#m6">feature</a></td><td rowspan="1">1589383451744</td><td rowspan="1">39780</td></tr><tr class="failedodd"><td rowspan="1">com.example.Parallel02IT</td><td><a href="#m7">feature</a></td><td rowspan="1">1589383336919</td><td rowspan="1">66279</td></tr><tr class="failedeven"><td rowspan="1">com.example.Parallel03IT</td><td><a href="#m8">feature</a></td><td rowspan="1">1589383408276</td><td rowspan="1">38441</td></tr><tr class="failedodd"><td rowspan="1">com.example.Parallel04IT</td><td><a href="#m9">feature</a></td><td rowspan="1">1589383539864</td><td rowspan="1">35983</td></tr><tr class="failedeven"><td rowspan="1">com.example.Parallel05IT</td><td><a href="#m10">feature</a></td><td rowspan="1">1589383496563</td><td rowspan="1">38273</td></tr><tr class="failedodd"><td rowspan="1">com.example.Parallel06IT</td><td><a href="#m11">feature</a></td><td rowspan="1">1589383580873</td><td rowspan="1">34814</td></tr><tr><th colspan="4">Automation &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.example.Parallel01IT</td><td><a href="#m12">tearDownClass</a></td><td rowspan="1">1589383491525</td><td rowspan="1">-1589383491525</td></tr><tr class="skippedodd"><td rowspan="1">com.example.Parallel02IT</td><td><a href="#m13">tearDownClass</a></td><td rowspan="1">1589383403208</td><td rowspan="1">-1589383403208</td></tr><tr class="skippedeven"><td rowspan="1">com.example.Parallel03IT</td><td><a href="#m14">tearDownClass</a></td><td rowspan="1">1589383446718</td><td rowspan="1">-1589383446718</td></tr><tr class="skippedodd"><td rowspan="1">com.example.Parallel04IT</td><td><a href="#m15">tearDownClass</a></td><td rowspan="1">1589383575847</td><td rowspan="1">-1589383575847</td></tr><tr class="skippedeven"><td rowspan="1">com.example.Parallel05IT</td><td><a href="#m16">tearDownClass</a></td><td rowspan="1">1589383534840</td><td rowspan="1">-1589383534840</td></tr><tr class="skippedodd"><td rowspan="1">com.example.Parallel06IT</td><td><a href="#m17">tearDownClass</a></td><td rowspan="1">1589383615688</td><td rowspan="1">-1589383615688</td></tr></tbody>
 </table>
-<h1>Default test</h1>
-</body></html>
+<h2>Automation</h2><h3 id="m0">com.example.Parallel01IT#afterClass</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoSuchMethodError: com.aventstack.extentreports.reporter.ExtentHtmlReporter.loadXMLConfig(Ljava/io/File;)V
+	at com.cucumber.listener.Reporter.loadXMLConfig(Reporter.java:66)
+	at com.example.Parallel01IT.afterClass(Parallel01IT.java:35)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.example.Parallel02IT#afterClass</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoSuchMethodError: com.aventstack.extentreports.reporter.ExtentHtmlReporter.loadXMLConfig(Ljava/io/File;)V
+	at com.cucumber.listener.Reporter.loadXMLConfig(Reporter.java:66)
+	at com.example.Parallel02IT.afterClass(Parallel02IT.java:35)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.example.Parallel03IT#afterClass</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoSuchMethodError: com.aventstack.extentreports.reporter.ExtentHtmlReporter.loadXMLConfig(Ljava/io/File;)V
+	at com.cucumber.listener.Reporter.loadXMLConfig(Reporter.java:66)
+	at com.example.Parallel03IT.afterClass(Parallel03IT.java:35)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.example.Parallel04IT#afterClass</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoSuchMethodError: com.aventstack.extentreports.reporter.ExtentHtmlReporter.loadXMLConfig(Ljava/io/File;)V
+	at com.cucumber.listener.Reporter.loadXMLConfig(Reporter.java:66)
+	at com.example.Parallel04IT.afterClass(Parallel04IT.java:35)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.example.Parallel05IT#afterClass</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoSuchMethodError: com.aventstack.extentreports.reporter.ExtentHtmlReporter.loadXMLConfig(Ljava/io/File;)V
+	at com.cucumber.listener.Reporter.loadXMLConfig(Reporter.java:66)
+	at com.example.Parallel05IT.afterClass(Parallel05IT.java:35)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.example.Parallel06IT#afterClass</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoSuchMethodError: com.aventstack.extentreports.reporter.ExtentHtmlReporter.loadXMLConfig(Ljava/io/File;)V
+	at com.cucumber.listener.Reporter.loadXMLConfig(Reporter.java:66)
+	at com.example.Parallel06IT.afterClass(Parallel06IT.java:35)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.example.Parallel01IT#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Test the Login functionality of the application</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">cucumber.runtime.CucumberException: java.lang.Exception: Object Couldn&apos;t be retrieved and verified
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+Caused by: java.lang.Exception: Object Couldn&apos;t be retrieved and verified
+	at commonUtils.CommonLibrary.isElementPresentVerification(CommonLibrary.java:554)
+	at Stepdefinition.HomePageStepdefinition.i_should_land_on_homescreen(HomePageStepdefinition.java:31)
+	at ✽.Then I should land on homescreen(/Users/us-guest/Documents/AdaptiveAutomationFramework/src/test/resources/Features/ParallelDemoFeature/WordpressDemo.feature:27)
+... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.example.Parallel02IT#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Test the Login functionality of the application</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">cucumber.runtime.CucumberException: java.lang.Exception: Object Couldn&apos;t be retrieved and verified
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+Caused by: java.lang.Exception: Object Couldn&apos;t be retrieved and verified
+	at commonUtils.CommonLibrary.isElementPresentVerification(CommonLibrary.java:554)
+	at Stepdefinition.HomePageStepdefinition.i_should_not_land_on_homescreen(HomePageStepdefinition.java:42)
+	at ✽.Then I should not land on homescreen(/Users/us-guest/Documents/AdaptiveAutomationFramework/src/test/resources/Features/ParallelDemoFeature/WordpressDemo.feature:31)
+... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.example.Parallel03IT#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Test the Login functionality of the application</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">cucumber.runtime.CucumberException: java.lang.Exception: Object Couldn&apos;t be retrieved and verified
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+Caused by: java.lang.Exception: Object Couldn&apos;t be retrieved and verified
+	at commonUtils.CommonLibrary.isElementPresentVerification(CommonLibrary.java:554)
+	at Stepdefinition.HomePageStepdefinition.i_should_land_on_homescreen(HomePageStepdefinition.java:31)
+	at ✽.Then I should land on homescreen(/Users/us-guest/Documents/AdaptiveAutomationFramework/src/test/resources/Features/ParallelDemoFeature/WordpressDemo.feature:35)
+... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.example.Parallel04IT#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Test the Login functionality of the application</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">cucumber.runtime.CucumberException: java.lang.Exception: Object Couldn&apos;t be retrieved and verified
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+Caused by: java.lang.Exception: Object Couldn&apos;t be retrieved and verified
+	at commonUtils.CommonLibrary.isElementPresentVerification(CommonLibrary.java:554)
+	at Stepdefinition.HomePageStepdefinition.i_should_land_on_homescreen(HomePageStepdefinition.java:31)
+	at ✽.Then I should land on homescreen(/Users/us-guest/Documents/AdaptiveAutomationFramework/src/test/resources/Features/ParallelDemoFeature/WordpressDemo.feature:41)
+... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.example.Parallel05IT#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Test the Login functionality of the application</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">cucumber.runtime.CucumberException: java.lang.Exception: Object Couldn&apos;t be retrieved and verified
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+Caused by: java.lang.Exception: Object Couldn&apos;t be retrieved and verified
+	at commonUtils.CommonLibrary.isElementPresentVerification(CommonLibrary.java:554)
+	at Stepdefinition.HomePageStepdefinition.i_should_land_on_homescreen(HomePageStepdefinition.java:31)
+	at ✽.Then I should land on homescreen(/Users/us-guest/Documents/AdaptiveAutomationFramework/src/test/resources/Features/ParallelDemoFeature/WordpressDemo.feature:47)
+... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.example.Parallel06IT#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Test the Login functionality of the application</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">cucumber.runtime.CucumberException: java.lang.Exception: Object Couldn&apos;t be retrieved and verified
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+Caused by: java.lang.Exception: Object Couldn&apos;t be retrieved and verified
+	at commonUtils.CommonLibrary.isElementPresentVerification(CommonLibrary.java:554)
+	at Stepdefinition.HomePageStepdefinition.i_should_land_on_homescreen(HomePageStepdefinition.java:31)
+	at ✽.Then I should land on homescreen(/Users/us-guest/Documents/AdaptiveAutomationFramework/src/test/resources/Features/ParallelDemoFeature/WordpressDemo.feature:53)
+... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.example.Parallel01IT#tearDownClass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.example.Parallel02IT#tearDownClass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.example.Parallel03IT#tearDownClass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">com.example.Parallel04IT#tearDownClass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">com.example.Parallel05IT#tearDownClass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">com.example.Parallel06IT#tearDownClass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

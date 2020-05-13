@@ -1,48 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" name="Failed suite [Cucumber Automation]" parallel="classes">
-  <test name="Automation(failed)" parallel="classes">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="classes" name="Failed suite [Cucumber Automation]">
+  <test thread-count="1" parallel="classes" name="Automation(failed)">
     <classes>
-      <class name="com.example.Parallel04IT">
-        <methods>
-          <include name="BeforeClass"/>
-          <include name="setUpClass"/>
-          <include name="afterClass"/>
-          <include name="tearDownClass"/>
-        </methods>
-      </class> <!-- com.example.Parallel04IT -->
       <class name="com.example.Parallel06IT">
         <methods>
           <include name="afterClass"/>
           <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
           <include name="tearDownClass"/>
           <include name="BeforeClass"/>
         </methods>
       </class> <!-- com.example.Parallel06IT -->
-      <class name="com.example.Parallel01IT">
-        <methods>
-          <include name="BeforeClass"/>
-          <include name="setUpClass"/>
-          <include name="tearDownClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.example.Parallel01IT -->
-      <class name="com.example.Parallel03IT">
-        <methods>
-          <include name="setUpClass"/>
-          <include name="afterClass"/>
-          <include name="tearDownClass"/>
-          <include name="BeforeClass"/>
-        </methods>
-      </class> <!-- com.example.Parallel03IT -->
-      <class name="com.example.Parallel05IT">
-        <methods>
-          <include name="afterClass"/>
-          <include name="setUpClass"/>
-          <include name="BeforeClass"/>
-          <include name="tearDownClass"/>
-        </methods>
-      </class> <!-- com.example.Parallel05IT -->
       <class name="com.example.Parallel02IT">
         <methods>
           <include name="BeforeClass"/>
@@ -52,6 +21,42 @@
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- com.example.Parallel02IT -->
+      <class name="com.example.Parallel03IT">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="tearDownClass"/>
+          <include name="BeforeClass"/>
+        </methods>
+      </class> <!-- com.example.Parallel03IT -->
+      <class name="com.example.Parallel05IT">
+        <methods>
+          <include name="afterClass"/>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="BeforeClass"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.example.Parallel05IT -->
+      <class name="com.example.Parallel04IT">
+        <methods>
+          <include name="BeforeClass"/>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.example.Parallel04IT -->
+      <class name="com.example.Parallel01IT">
+        <methods>
+          <include name="BeforeClass"/>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.example.Parallel01IT -->
     </classes>
   </test> <!-- Automation(failed) -->
 </suite> <!-- Failed suite [Cucumber Automation] -->

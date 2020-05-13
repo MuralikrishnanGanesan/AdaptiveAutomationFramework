@@ -1,10 +1,28 @@
-C:\Users\muralikrishnan_g\Parallel testing\AppiumParallelExecution\src\test\java\commonUtils\ReportObject.java
-C:\Users\muralikrishnan_g\Parallel testing\AppiumParallelExecution\target\generated-test-sources\cucumber\com\example\Parallel01IT.java
-C:\Users\muralikrishnan_g\Parallel testing\AppiumParallelExecution\target\generated-test-sources\cucumber\com\example\Parallel02IT.java
-C:\Users\muralikrishnan_g\Parallel testing\AppiumParallelExecution\src\test\java\cukesrunner\RunnerCukes.java
-C:\Users\muralikrishnan_g\Parallel testing\AppiumParallelExecution\src\test\java\commonUtils\CucumberReport.java
-C:\Users\muralikrishnan_g\Parallel testing\AppiumParallelExecution\src\test\java\commonUtils\ReportRun.java
-C:\Users\muralikrishnan_g\Parallel testing\AppiumParallelExecution\src\test\java\cukesrunner\TestRunner.java
-C:\Users\muralikrishnan_g\Parallel testing\AppiumParallelExecution\src\test\java\commonUtils\CommonLibrary.java
-C:\Users\muralikrishnan_g\Parallel testing\AppiumParallelExecution\src\test\java\commonUtils\Hooks.java
-C:\Users\muralikrishnan_g\Parallel testing\AppiumParallelExecution\src\test\java\helpers\UserConfig.java
+/Users/us-guest/Documents/AdaptiveAutomationFramework/src/test/java/cukesrunner/RunnerCukes.java
+/Users/us-guest/Documents/AdaptiveAutomationFramework/src/test/java/commonUtils/CommonLibrary.java
+/Users/us-guest/Documents/AdaptiveAutomationFramework/src/test/java/commonUtils/ReportRun.java
+/Users/us-guest/Documents/AdaptiveAutomationFramework/src/test/java/ParallelExecutionFiles/BrowserManager.java
+/Users/us-guest/Documents/AdaptiveAutomationFramework/src/test/java/ParallelExecutionFiles/ParallelThread.java
+/Users/us-guest/Documents/AdaptiveAutomationFramework/src/test/java/helpers/UserConfig.java
+/Users/us-guest/Documents/AdaptiveAutomationFramework/src/test/java/Stepdefinition/HomePageStepdefinition.java
+/Users/us-guest/Documents/AdaptiveAutomationFramework/src/test/java/PageObjects/HomePageConstants.java
+/Users/us-guest/Documents/AdaptiveAutomationFramework/src/test/java/Stepdefinition/Hooks.java
+/Users/us-guest/Documents/AdaptiveAutomationFramework/src/test/java/ParallelExecutionFiles/CommandPrompt.java
+/Users/us-guest/Documents/AdaptiveAutomationFramework/src/test/java/commonUtils/ReportObject.java
+/Users/us-guest/Documents/AdaptiveAutomationFramework/src/test/java/ParallelExecutionFiles/AvailablePorts.java
+/Users/us-guest/Documents/AdaptiveAutomationFramework/target/generated-test-sources/cucumber/com/example/Parallel06IT.java
+/Users/us-guest/Documents/AdaptiveAutomationFramework/src/test/java/cukesrunner/TestRunner.java
+/Users/us-guest/Documents/AdaptiveAutomationFramework/src/test/java/ParallelExecutionFiles/DeviceAllocationManager.java
+/Users/us-guest/Documents/AdaptiveAutomationFramework/src/test/java/ParallelExecutionFiles/TestNgXml.java
+/Users/us-guest/Documents/AdaptiveAutomationFramework/src/test/java/ParallelExecutionFiles/AppiumServermanager.java
+/Users/us-guest/Documents/AdaptiveAutomationFramework/target/generated-test-sources/cucumber/com/example/Parallel03IT.java
+/Users/us-guest/Documents/AdaptiveAutomationFramework/target/generated-test-sources/cucumber/com/example/Parallel02IT.java
+/Users/us-guest/Documents/AdaptiveAutomationFramework/target/generated-test-sources/cucumber/com/example/Parallel01IT.java
+/Users/us-guest/Documents/AdaptiveAutomationFramework/target/generated-test-sources/cucumber/com/example/Parallel05IT.java
+/Users/us-guest/Documents/AdaptiveAutomationFramework/target/generated-test-sources/cucumber/com/example/Parallel04IT.java
+/Users/us-guest/Documents/AdaptiveAutomationFramework/src/test/java/ParallelExecutionFiles/AndroidDeviceConfiguration.java
+/Users/us-guest/Documents/AdaptiveAutomationFramework/src/test/java/ParallelExecutionFiles/DeviceManager.java
+/Users/us-guest/Documents/AdaptiveAutomationFramework/src/test/java/Stepdefinition/LoginPageStepdefinition.java
+/Users/us-guest/Documents/AdaptiveAutomationFramework/src/test/java/commonUtils/CucumberReport.java
+/Users/us-guest/Documents/AdaptiveAutomationFramework/src/test/java/PageObjects/LoginPageConstants.java
+/Users/us-guest/Documents/AdaptiveAutomationFramework/src/test/java/ParallelExecutionFiles/WebBrowserConfiguration.java

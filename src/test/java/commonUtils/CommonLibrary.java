@@ -43,8 +43,6 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-
 import com.cucumber.listener.Reporter;
 
 import ParallelExecutionFiles.AndroidDeviceConfiguration;
@@ -58,13 +56,10 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.AutomationName;
 import io.appium.java_client.remote.MobileCapabilityType;
-
-
-
 public class CommonLibrary {
 
 
-	public WebDriver webDriver;
+	WebDriver webDriver;
 	static WebDriverWait browserWithElementWait = null;
 	public static Configuration config = null;
 	public static FileWriter reportFile=null;
@@ -454,17 +449,18 @@ public class CommonLibrary {
 			System.out.println("initialising the Android Application");
 			DesiredCapabilities capabilities = new DesiredCapabilities();	
 			capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-			capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "6.0.1");
+			capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "7.0.0");
 			capabilities.setCapability("deviceName", "Android");
-			capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,AutomationName.APPIUM);
+			capabilities.setCapability("takesScreenshot", true);
+			capabilities.setCapability("androidScreenshotPath", "target/screenshots");
+			capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,AutomationName.ANDROID_UIAUTOMATOR2);
 			capabilities.setCapability(MobileCapabilityType.UDID, DeviceManager.getDeviceUDID());
 			capabilities.setCapability("appPackage", config.getString("AppPackage")); 
 			capabilities.setCapability("appActivity", config.getString("AppActivity")); 
 			capabilities.setCapability("app", UserConfig.app);
-
+			
 			webDriver=new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:"+DeviceAllocationManager.getNextAvailablePortBinding()+"/wd/hub"), capabilities);
 
-			Thread.sleep(15000);
 
 		} catch(Exception e) {
 			e.printStackTrace();
@@ -575,7 +571,7 @@ public class CommonLibrary {
 		browserWithElementWait = new WebDriverWait(webDriver,config.getInt("elementWaitInSeconds"));
 		highlightElement(element, webDriver);
 		try {
-			browserWithElementWait.until(ExpectedConditions.elementToBeClickable(element));
+			//browserWithElementWait.until(ExpectedConditions.elementToBeClickable(element));
 			if(element!=null){
 				element.clear();
 				Thread.sleep(2000);
@@ -845,6 +841,7 @@ public class CommonLibrary {
 	 * 
 	 */
 
+	@SuppressWarnings("deprecation")
 	public static void getElementLocationPercentage(WebElement element, WebDriver webDriver) {
 
 		// Getting Mobile Device Coordinates and Mobile element Coordinates

@@ -1,39 +1,517 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="0" passed="0">
+<testng-results ignored="0" total="6" passed="0" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2258" started-at="2018-01-05T10:27:43Z" finished-at="2018-01-05T10:27:45Z">
+  <suite started-at="2020-05-13T10:22:16 CDT" name="Cucumber Automation" finished-at="2020-05-13T10:26:55 CDT" duration-ms="279251">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cukesrunner.TestRunner$ExtendReportRunner@12cdcf4]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cukesrunner.TestRunner@1e7c7811]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.example.Parallel01IT@3e30646a]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.example.Parallel02IT@53bd8fca]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.example.Parallel03IT@7642df8f]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.example.Parallel04IT@63a270c9]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.example.Parallel05IT@5cde6747]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.example.Parallel06IT@37c7595]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="2258" started-at="2018-01-05T10:27:43Z" finished-at="2018-01-05T10:27:45Z">
-      <class name="cukesrunner.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:cukesrunner.TestRunner@1e7c7811]" name="setUpClass" is-config="true" duration-ms="88" started-at="2018-01-05T15:57:44Z" finished-at="2018-01-05T15:57:44Z">
+    <test started-at="2020-05-13T10:22:16 CDT" name="Automation" finished-at="2020-05-13T10:26:55 CDT" duration-ms="279251">
+      <class name="com.example.Parallel04IT">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.example.Parallel04IT@63a270c9]" started-at="2020-05-13T10:25:34 CDT" name="setUpClass" finished-at="2020-05-13T10:25:34 CDT" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:cukesrunner.TestRunner@1e7c7811]" name="tearDownClass" is-config="true" duration-ms="804" started-at="2018-01-05T15:57:44Z" finished-at="2018-01-05T15:57:45Z">
+        <test-method is-config="true" signature="BeforeClass()[pri:0, instance:com.example.Parallel04IT@63a270c9]" started-at="2020-05-13T10:25:34 CDT" name="BeforeClass" finished-at="2020-05-13T10:25:39 CDT" duration-ms="5005" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeClass -->
+        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.example.Parallel04IT@63a270c9]" started-at="2020-05-13T10:25:39 CDT" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-05-13T10:26:15 CDT" duration-ms="35983" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test the Login functionality of the application]]>
+              </value>
+            </param>
+          </params>
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[java.lang.Exception: Object Couldn't be retrieved and verified]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.Exception: Object Couldn't be retrieved and verified
+at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:835)
+Caused by: java.lang.Exception: Object Couldn't be retrieved and verified
+at commonUtils.CommonLibrary.isElementPresentVerification(CommonLibrary.java:554)
+at Stepdefinition.HomePageStepdefinition.i_should_land_on_homescreen(HomePageStepdefinition.java:31)
+at ✽.Then I should land on homescreen(/Users/us-guest/Documents/AdaptiveAutomationFramework/src/test/resources/Features/ParallelDemoFeature/WordpressDemo.feature:41)
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.CucumberException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.example.Parallel04IT@63a270c9]" started-at="2020-05-13T10:26:15 CDT" name="tearDownClass" finished-at="1969-12-31T18:00:00 CST" duration-ms="-1589383575847" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- cukesrunner.TestRunner -->
-      <class name="cukesrunner.TestRunner$ExtendReportRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:cukesrunner.TestRunner$ExtendReportRunner@12cdcf4]" name="setUpClass" is-config="true" duration-ms="978" started-at="2018-01-05T15:57:43Z" finished-at="2018-01-05T15:57:44Z">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.example.Parallel04IT@63a270c9]" started-at="2020-05-13T10:26:15 CDT" name="afterClass" finished-at="2020-05-13T10:26:15 CDT" duration-ms="0" status="FAIL">
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA[com.aventstack.extentreports.reporter.ExtentHtmlReporter.loadXMLConfig(Ljava/io/File;)V]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: com.aventstack.extentreports.reporter.ExtentHtmlReporter.loadXMLConfig(Ljava/io/File;)V
+at com.cucumber.listener.Reporter.loadXMLConfig(Reporter.java:66)
+at com.example.Parallel04IT.afterClass(Parallel04IT.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:835)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.example.Parallel04IT -->
+      <class name="com.example.Parallel03IT">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.example.Parallel03IT@7642df8f]" started-at="2020-05-13T10:23:23 CDT" name="setUpClass" finished-at="2020-05-13T10:23:23 CDT" duration-ms="31" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:cukesrunner.TestRunner$ExtendReportRunner@12cdcf4]" name="setup" is-config="true" duration-ms="0" started-at="2018-01-05T15:57:44Z" finished-at="2018-01-05T15:57:44Z">
+        <test-method is-config="true" signature="BeforeClass()[pri:0, instance:com.example.Parallel03IT@7642df8f]" started-at="2020-05-13T10:23:23 CDT" name="BeforeClass" finished-at="2020-05-13T10:23:28 CDT" duration-ms="5012" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:cukesrunner.TestRunner$ExtendReportRunner@12cdcf4]" name="tearDownClass" is-config="true" duration-ms="88" started-at="2018-01-05T15:57:44Z" finished-at="2018-01-05T15:57:44Z">
+        </test-method> <!-- BeforeClass -->
+        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.example.Parallel03IT@7642df8f]" started-at="2020-05-13T10:23:28 CDT" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-05-13T10:24:06 CDT" duration-ms="38441" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test the Login functionality of the application]]>
+              </value>
+            </param>
+          </params>
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[java.lang.Exception: Object Couldn't be retrieved and verified]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.Exception: Object Couldn't be retrieved and verified
+at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:835)
+Caused by: java.lang.Exception: Object Couldn't be retrieved and verified
+at commonUtils.CommonLibrary.isElementPresentVerification(CommonLibrary.java:554)
+at Stepdefinition.HomePageStepdefinition.i_should_land_on_homescreen(HomePageStepdefinition.java:31)
+at ✽.Then I should land on homescreen(/Users/us-guest/Documents/AdaptiveAutomationFramework/src/test/resources/Features/ParallelDemoFeature/WordpressDemo.feature:35)
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.CucumberException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.example.Parallel03IT@7642df8f]" started-at="2020-05-13T10:24:06 CDT" name="tearDownClass" finished-at="1969-12-31T18:00:00 CST" duration-ms="-1589383446718" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- cukesrunner.TestRunner$ExtendReportRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.example.Parallel03IT@7642df8f]" started-at="2020-05-13T10:24:06 CDT" name="afterClass" finished-at="2020-05-13T10:24:06 CDT" duration-ms="0" status="FAIL">
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA[com.aventstack.extentreports.reporter.ExtentHtmlReporter.loadXMLConfig(Ljava/io/File;)V]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: com.aventstack.extentreports.reporter.ExtentHtmlReporter.loadXMLConfig(Ljava/io/File;)V
+at com.cucumber.listener.Reporter.loadXMLConfig(Reporter.java:66)
+at com.example.Parallel03IT.afterClass(Parallel03IT.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:835)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.example.Parallel03IT -->
+      <class name="com.example.Parallel02IT">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.example.Parallel02IT@53bd8fca]" started-at="2020-05-13T10:22:16 CDT" name="setUpClass" finished-at="2020-05-13T10:22:16 CDT" duration-ms="336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="BeforeClass()[pri:0, instance:com.example.Parallel02IT@53bd8fca]" started-at="2020-05-13T10:22:16 CDT" name="BeforeClass" finished-at="2020-05-13T10:22:16 CDT" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeClass -->
+        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.example.Parallel02IT@53bd8fca]" started-at="2020-05-13T10:22:16 CDT" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-05-13T10:23:23 CDT" duration-ms="66279" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test the Login functionality of the application]]>
+              </value>
+            </param>
+          </params>
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[java.lang.Exception: Object Couldn't be retrieved and verified]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.Exception: Object Couldn't be retrieved and verified
+at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:835)
+Caused by: java.lang.Exception: Object Couldn't be retrieved and verified
+at commonUtils.CommonLibrary.isElementPresentVerification(CommonLibrary.java:554)
+at Stepdefinition.HomePageStepdefinition.i_should_not_land_on_homescreen(HomePageStepdefinition.java:42)
+at ✽.Then I should not land on homescreen(/Users/us-guest/Documents/AdaptiveAutomationFramework/src/test/resources/Features/ParallelDemoFeature/WordpressDemo.feature:31)
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.CucumberException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.example.Parallel02IT@53bd8fca]" started-at="2020-05-13T10:23:23 CDT" name="afterClass" finished-at="2020-05-13T10:23:23 CDT" duration-ms="1" status="FAIL">
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA[com.aventstack.extentreports.reporter.ExtentHtmlReporter.loadXMLConfig(Ljava/io/File;)V]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: com.aventstack.extentreports.reporter.ExtentHtmlReporter.loadXMLConfig(Ljava/io/File;)V
+at com.cucumber.listener.Reporter.loadXMLConfig(Reporter.java:66)
+at com.example.Parallel02IT.afterClass(Parallel02IT.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:835)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.example.Parallel02IT@53bd8fca]" started-at="2020-05-13T10:23:23 CDT" name="tearDownClass" finished-at="1969-12-31T18:00:00 CST" duration-ms="-1589383403208" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.example.Parallel02IT -->
+      <class name="com.example.Parallel01IT">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.example.Parallel01IT@3e30646a]" started-at="2020-05-13T10:24:06 CDT" name="setUpClass" finished-at="2020-05-13T10:24:06 CDT" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="BeforeClass()[pri:0, instance:com.example.Parallel01IT@3e30646a]" started-at="2020-05-13T10:24:06 CDT" name="BeforeClass" finished-at="2020-05-13T10:24:11 CDT" duration-ms="5006" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeClass -->
+        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.example.Parallel01IT@3e30646a]" started-at="2020-05-13T10:24:11 CDT" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-05-13T10:24:51 CDT" duration-ms="39780" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test the Login functionality of the application]]>
+              </value>
+            </param>
+          </params>
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[java.lang.Exception: Object Couldn't be retrieved and verified]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.Exception: Object Couldn't be retrieved and verified
+at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:835)
+Caused by: java.lang.Exception: Object Couldn't be retrieved and verified
+at commonUtils.CommonLibrary.isElementPresentVerification(CommonLibrary.java:554)
+at Stepdefinition.HomePageStepdefinition.i_should_land_on_homescreen(HomePageStepdefinition.java:31)
+at ✽.Then I should land on homescreen(/Users/us-guest/Documents/AdaptiveAutomationFramework/src/test/resources/Features/ParallelDemoFeature/WordpressDemo.feature:27)
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.CucumberException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.example.Parallel01IT@3e30646a]" started-at="2020-05-13T10:24:51 CDT" name="afterClass" finished-at="2020-05-13T10:24:51 CDT" duration-ms="0" status="FAIL">
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA[com.aventstack.extentreports.reporter.ExtentHtmlReporter.loadXMLConfig(Ljava/io/File;)V]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: com.aventstack.extentreports.reporter.ExtentHtmlReporter.loadXMLConfig(Ljava/io/File;)V
+at com.cucumber.listener.Reporter.loadXMLConfig(Reporter.java:66)
+at com.example.Parallel01IT.afterClass(Parallel01IT.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:835)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.example.Parallel01IT@3e30646a]" started-at="2020-05-13T10:24:51 CDT" name="tearDownClass" finished-at="1969-12-31T18:00:00 CST" duration-ms="-1589383491525" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.example.Parallel01IT -->
+      <class name="com.example.Parallel06IT">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.example.Parallel06IT@37c7595]" started-at="2020-05-13T10:26:15 CDT" name="setUpClass" finished-at="2020-05-13T10:26:15 CDT" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="BeforeClass()[pri:0, instance:com.example.Parallel06IT@37c7595]" started-at="2020-05-13T10:26:15 CDT" name="BeforeClass" finished-at="2020-05-13T10:26:20 CDT" duration-ms="5007" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeClass -->
+        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.example.Parallel06IT@37c7595]" started-at="2020-05-13T10:26:20 CDT" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-05-13T10:26:55 CDT" duration-ms="34814" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test the Login functionality of the application]]>
+              </value>
+            </param>
+          </params>
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[java.lang.Exception: Object Couldn't be retrieved and verified]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.Exception: Object Couldn't be retrieved and verified
+at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:835)
+Caused by: java.lang.Exception: Object Couldn't be retrieved and verified
+at commonUtils.CommonLibrary.isElementPresentVerification(CommonLibrary.java:554)
+at Stepdefinition.HomePageStepdefinition.i_should_land_on_homescreen(HomePageStepdefinition.java:31)
+at ✽.Then I should land on homescreen(/Users/us-guest/Documents/AdaptiveAutomationFramework/src/test/resources/Features/ParallelDemoFeature/WordpressDemo.feature:53)
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.CucumberException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.example.Parallel06IT@37c7595]" started-at="2020-05-13T10:26:55 CDT" name="afterClass" finished-at="2020-05-13T10:26:55 CDT" duration-ms="1" status="FAIL">
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA[com.aventstack.extentreports.reporter.ExtentHtmlReporter.loadXMLConfig(Ljava/io/File;)V]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: com.aventstack.extentreports.reporter.ExtentHtmlReporter.loadXMLConfig(Ljava/io/File;)V
+at com.cucumber.listener.Reporter.loadXMLConfig(Reporter.java:66)
+at com.example.Parallel06IT.afterClass(Parallel06IT.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:835)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.example.Parallel06IT@37c7595]" started-at="2020-05-13T10:26:55 CDT" name="tearDownClass" finished-at="1969-12-31T18:00:00 CST" duration-ms="-1589383615688" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.example.Parallel06IT -->
+      <class name="com.example.Parallel05IT">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.example.Parallel05IT@5cde6747]" started-at="2020-05-13T10:24:51 CDT" name="setUpClass" finished-at="2020-05-13T10:24:51 CDT" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="BeforeClass()[pri:0, instance:com.example.Parallel05IT@5cde6747]" started-at="2020-05-13T10:24:51 CDT" name="BeforeClass" finished-at="2020-05-13T10:24:56 CDT" duration-ms="5007" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeClass -->
+        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.example.Parallel05IT@5cde6747]" started-at="2020-05-13T10:24:56 CDT" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-05-13T10:25:34 CDT" duration-ms="38273" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test the Login functionality of the application]]>
+              </value>
+            </param>
+          </params>
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[java.lang.Exception: Object Couldn't be retrieved and verified]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.Exception: Object Couldn't be retrieved and verified
+at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:835)
+Caused by: java.lang.Exception: Object Couldn't be retrieved and verified
+at commonUtils.CommonLibrary.isElementPresentVerification(CommonLibrary.java:554)
+at Stepdefinition.HomePageStepdefinition.i_should_land_on_homescreen(HomePageStepdefinition.java:31)
+at ✽.Then I should land on homescreen(/Users/us-guest/Documents/AdaptiveAutomationFramework/src/test/resources/Features/ParallelDemoFeature/WordpressDemo.feature:47)
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.CucumberException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.example.Parallel05IT@5cde6747]" started-at="2020-05-13T10:25:34 CDT" name="afterClass" finished-at="2020-05-13T10:25:34 CDT" duration-ms="2" status="FAIL">
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA[com.aventstack.extentreports.reporter.ExtentHtmlReporter.loadXMLConfig(Ljava/io/File;)V]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: com.aventstack.extentreports.reporter.ExtentHtmlReporter.loadXMLConfig(Ljava/io/File;)V
+at com.cucumber.listener.Reporter.loadXMLConfig(Reporter.java:66)
+at com.example.Parallel05IT.afterClass(Parallel05IT.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:835)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.example.Parallel05IT@5cde6747]" started-at="2020-05-13T10:25:34 CDT" name="tearDownClass" finished-at="1969-12-31T18:00:00 CST" duration-ms="-1589383534840" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.example.Parallel05IT -->
+    </test> <!-- Automation -->
+  </suite> <!-- Cucumber Automation -->
 </testng-results>
